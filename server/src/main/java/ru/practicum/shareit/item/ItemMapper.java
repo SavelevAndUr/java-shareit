@@ -13,7 +13,7 @@ public class ItemMapper {
     public static Item toItem(ItemDto dto, Long ownerId) {
         User owner = new User();
         owner.setId(ownerId);
-        return new Item(dto.getId(), dto.getName(), dto.getDescription(), dto.getAvailable(), owner, null);
+        return new Item(dto.getId(), dto.getName(), dto.getDescription(), dto.getAvailable(), owner, dto.getRequestId());
     }
 
     public static ItemDto toItemDto(Item item,
