@@ -1,5 +1,5 @@
-package ru.practicum.shareit.comment;
+    package ru.practicum.shareit.comment;
 
-public interface CommentService {
-    CommentDto addComment(Long itemId, Long userId, String text);
-}
+    public interface CommentService {
+        CommentDto addComment(Long itemId, Long userId, String text);
+    }
